@@ -1,14 +1,116 @@
 <!doctype html>
 <html lang="de" itemscope itemtype="og: schema.org/WebPage">
-  <head>
-    <!-- Custom Origin Trail -->
-     <meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<!--
+  Design und Entwicklung dieser Website erfolgten mit React durch
+  Erik Schmidt und Alexander Paul.
+
+  Copyright © 2025 TourneyPro – Alle Rechte vorbehalten.
+  Coding with ♥ in München, Deutschland.
+
+  Vielen Dank für Ihr Interesse und Vertrauen in unsere Arbeit.
+-->
+<!-- Custom Origin Trail -->
+<meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<!-- Custom basehref -->
+<base href="#">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Diese Seite ist optimiert mit den Erik Schmidt SEO Pro Plugin 1.0.0-->
+<title>TourneyPro - Turnierplaner erstelle kostenlos deine Turnierpläne mit TourneyPro</title>
+<!-- Custom Alternate Links -->
+<link rel="alternate" href="#">
+<!-- Custom Canonical Link -->
+<link rel="canonical" href="#">
+<!-- Custom Google Tag Manager Link -->
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=GTM-T66VZV4Z&amp;cx=c&amp;gtm=45He5710v830191399za200&amp;tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104684208~104684211~104718208~104839054~104839056~104879961~104885889~104885891"></script>
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=GTM-T66VZV4Z&amp;cx=c&amp;gtm=457e5710za200&amp;tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104684208~104684211~104718208~104839054~104839056~104885889~104885891~104908318~104908320"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-T66VZV4Z"></script>
+<!-- Custom Generator Author and Designer Tags -->
+<meta name="Generator" content="react, bootstrap, mui, firebase und mehr sachen">
+<meta name="author" content="Erik Schmidt">
+<meta name="author" content="Alexander Paul">
+<meta name="designer" content="Erik Schmidt , TourneyPro Team">
+<meta name="keywords" content="TourneyPro, Turnierplaner, 2025">
+<meta name="description" content="Die umfassende Lösung für Turnierorganisation. Erstellen, verwalten und verfolgen Sie Ihre Turniere mit unserem professionellen Tool.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TourneyPro" />
+<meta property="og:description" content="Die umfassende Lösung für Turnierorganisation. Erstellen, verwalten und verfolgen Sie Ihre Turniere mit unserem professionellen Tool." />
+<meta property="og:url" content="#" />
+<meta property="og:image" content="#" />
+<meta property="og:site name" content="TourneyPro" />
+<meta property="og:locale" content="de DE" />
+<!-- /End Erik Schmidt Seo Pro Plugin 2025 -->
+<!-- Custom Google Site Verification TAG -->
+<meta name="google-site-verification" content="wczSwtOxgWbVWJ8IEyMzgGFsaJ_QN5UH3LS82PZlIzI" />
+<!-- Custom Favicons SVG and other icons --> 
+<link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+<link rel="shortcut icon" href="/public/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Tourney-Turnierplaner" />
+<link rel="manifest" href="/public/site.webmanifest" />
+<!-- Custom UI Widgets Links -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js"></script>
+<!-- Custom Widget Text Editor Link -->
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+<!-- Custom Swiper CSS and Js Links-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Custom Jquerymmenus Css and js links -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mmenu-js@9.0.0/dist/mmenu.css" />
+<script src="https://cdn.jsdelivr.net/npm/mmenu-js@9.0.0/dist/mmenu.js"></script>
+<!-- custom Slick Links -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Custom Slick Lightbox Link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-lightbox@0.2.12/dist/slick-lightbox.css" />
+<script src="https://cdn.jsdelivr.net/npm/slick-lightbox@0.2.12/dist/slick-lightbox.min.js"></script>
+<!-- Custom Jquery Fancybox LINKS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<!-- All Links -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
+<script src="https://cdn.jsdelivr.net/npm/jquery.magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css@2.3.1/css/hover-min.css" />
+<script src="https://cdn.jsdelivr.net/npm/modernizr@3.11.7/modernizr.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/dist/tippy.css" />
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/dist/tippy.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script src="https://unpkg.com/htmx.org@1.9.5"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0.3/dist/pretty-checkbox.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flexslider@2.7.2/flexslider.css" />
+<script src="https://cdn.jsdelivr.net/npm/jquery.flexslider@2.7.2/jquery.flexslider-min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Inter&family=Jost&family=Poppins&display=swap" rel="stylesheet" />
+<!-- Custom EYeable Link -->
+<script async="" src="https://cdn.eye-able.com/configs/www.jungadler.de.js"></script>
+<script async="" src="https://cdn.eye-able.com/public/js/eyeAble.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
